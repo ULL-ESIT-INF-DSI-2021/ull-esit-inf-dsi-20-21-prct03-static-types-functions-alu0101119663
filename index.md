@@ -412,3 +412,13 @@ El usuario J$$_c0 es valido? : false
 El usuario J$$c0 es valido? : true
 El usuario u__hi$12__S es valido? : true
 ```
+
+## Conclusión
+Durante la realización de la práctica me he encontrado cómodo a pesar de algunas dificultades que he podido superar. He aprendido a realizar operaciones con expresiones regulares en **TypeScript**, a repasar la creación de un directorio adecuado. Creo que la dificultad de estos ejecicios no ha sido alta, pero ha sido la adecuada para poder aprender y afrontar los primeros problemas cuando estamos aprendiendo un nuevo lenguaje. A opinión personal, cada vez me siento más agusto con **TypeScript** y me parece bastante interesante.
+
+## Bibliografía
+Enunciado de la práctica - 	https://ull-esit-inf-dsi-2021.github.io/prct03-types-functions/
+Creacion de la estructura básica de un proyecto - https://ull-esit-inf-dsi-2021.github.io/typescript-theory/typescript-project-setup.html
+Expresiones regulares - 	https://www.w3schools.com/js/js_regexp.asp
+Sistema factorial - 	https://es.wikipedia.org/wiki/Factor%C3%A1dico
+ISBM-10 - https://en.wikipedia.org/wiki/International_Standard_Book_Number
