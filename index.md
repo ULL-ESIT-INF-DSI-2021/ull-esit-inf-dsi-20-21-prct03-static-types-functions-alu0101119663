@@ -1,7 +1,7 @@
 # Práctica 3 - Tipos de datos estáticos y funciones
 
 ## Introducción
-Durante la realización de esta práctica lo que haremos es familiarizarnos con la realización de ejercicios en código TypeScript, centrado en los tipos de datos estáticos y funciones en este lenguaje. Para empezar crearemos una estructura para nuestro proyecto y luego empezaremos a codificar los ejercicios que nos han propuesto.
+Durante la realización de esta práctica lo que haremos es familiarizarnos con la realización de ejercicios en código **TypeScript**, centrado en los **tipos de datos estáticos y funciones** en este lenguaje. Para empezar crearemos una estructura para nuestro proyecto y luego empezaremos a codificar los ejercicios que nos han propuesto.
 
 ## Antes de empezar.
 Antes de empezar, hemos de crear la estructura. Para ello nos dirigimos al directorio donde vamos a empezar y ejecutamos lo siguiente:
@@ -43,7 +43,7 @@ function isLeapYear(year: number) {
   return false;
 }
 ```
-La función recibe como parametro el año que vamos a analizar, una vez recibido vemos si cumple las condiciones de si es divisible entre 4, si es divisible por 100 y si es divisible por 400. Entonces si en la primera no se da el caso nos devuelve false, sin embargo si cumbple la condicion comprueba la siguiete, que es un condicional compuesto, para que retorne un true, debe darse los dos casos tanto que sea divisible por 100 como por 400.
+La función recibe como parametro el año que vamos a analizar, una vez recibido vemos si cumple las condiciones de si es divisible entre 4, si es divisible por 100 y si es divisible por 400. Entonces si en la primera no se da el caso nos devuelve *false*, sin embargo si cumbple la condición comprueba la siguiete, que es un condicional compuesto, para que retorne un *true*, debe darse los dos casos tanto que sea divisible por 100 como por 400.
 
 **Salida del programa**
 ```
@@ -92,7 +92,7 @@ function factorialToDecimal(str: string): number {
   return notacion; 
 }
 ```
-Para este ejercicio tenemos 3 funciones, en la primera **factorial**, se le pasa un parametro, que es el número y retorna el factorial de este. Se utiliza recurisvidad para hallar el valor correcto, llamando la misma funcion decrementando el valor de entrada hasta que sea igual a 0. En la segunda **decimalToFactorial** se le pasa un número entero y retorna el mismo número pero en notación factoria. Se obtiene el mayor factorial y se sigue la fórmula que se nos indica en el guión de la práctica. El multiplicador de los factoriales se obtiene haciendo la división entre el resto. Hago uso de truncamiento por si existe algún problema. Antes de sacar el número se multiplica por el factorial, y se va sumando en el sumatorio hasta que se optiene el valor correspondiente en notación factorial. Por último, tenemos la función **factorialToDecimal** que se le pasa como parametro un número en notación factorial, se obtiene el número que representa y retorna dicho valor. Con la variable *aux* se obteniendo los números de la notación de izquierda a derecha. Dentro del bucle, se multiplica el número de la notación por el factorial correspondiente y se hace el sumatorio. Una vez terminado el bucle, el número se retorna.
+Para este ejercicio tenemos 3 funciones, en la primera **factorial**, se le pasa un parámetro, que es el número y retorna el factorial de este. Se utiliza recurisvidad para hallar el valor correcto, llamando la misma función decrementando el valor de entrada hasta que sea igual a 0. En la segunda **decimalToFactorial** se le pasa un número entero y retorna el mismo número pero en notación factoria. Se obtiene el mayor factorial y se sigue la fórmula que se nos indica en el enunciado de la práctica. El multiplicador de los factoriales se obtiene haciendo la división entre el resto. Hago uso de truncamiento por si existe algún problema. Antes de sacar el número se multiplica por el factorial, y se va sumando en el sumatorio hasta que se optiene el valor correspondiente en notación factorial. Por último, tenemos la función **factorialToDecimal** que se le pasa como parametro un número en notación factorial, se obtiene el número que representa y retorna dicho valor. Con la variable *aux* se obteniendo los números de la notación de izquierda a derecha. Dentro del bucle, se multiplica el número de la notación por el factorial correspondiente y se hace el sumatorio. Una vez terminado el bucle, el número se retorna.
 
 **Salida del programa**
 
@@ -132,7 +132,7 @@ function isValid(str: string): boolean {
 }
 
 ```
-En este ejercicio, tenemos una fucnion que comprueba si un mensaje es válido o no. Para ello con un bucle se recorre la cadena que la función recibe como parámetro. Comprueba si la posición en la que se encuentra tiene guardado un número, en caso de que no sea así, se retorna false. Se avanza hasta la primera letra y hacemos que recorra la cantidad que indique el número que capturamos antes. Esto se repite para comprobar que hay tantas letras como el valor del número que precede a las letras. Si todo va bien, retorna un true. En caso contrario, retornará false.
+En este ejercicio, tenemos una función que comprueba si un mensaje es válido o no. Para ello con un bucle se recorre la cadena que la función recibe como parámetro. Comprueba si la posición en la que se encuentra tiene guardado un número, en caso de que no sea así, se retorna *false*. Se avanza hasta la primera letra y hacemos que recorra la cantidad que indique el número que capturamos antes. Esto se repite para comprobar que hay tantas letras como el valor del número que precede a las letras. Si todo va bien, retorna un *true*. En caso contrario, retornará *false*.
 
 **Salida del programa**
 ´´´
@@ -171,7 +171,7 @@ function fromCamelToSnakeCase(strCamelCase: string): string {
   return strSnakeCase;
 }
 ```
-Para realizar este ejercicio necesitamos dos funciones, en la primera **fromSnakeToCamelCase** se pasa una cadena recibida por parámetro en estilo Snake Case (las palabras se separan por barrabaja) y devuelve una cadena en estilo Camel Case (palabras separadas con la primera de la siguiente en mayúscula). Para ello se recorre la cadena hasta que se le encuentra una barrabaja, una vez hecho se copia la siguiente letra en mayúscula. Mientras no se encuentre una barrabaja, se seguirá copiando letra a letra en la variable creada. En la segunda función **fromCamelToSnakeCase**, se hace lo contrario, se busca una letra mayúscula y si se encuentra se añade una barrabaja y luego la letra que estaba en mayúscula se la copiamos a la variable que creamos pero esta vez en minúscula. Al igual que en el caso anterior, si la condición no se da, se copia letra a letra sin realizar modificaciones.
+Para realizar este ejercicio necesitamos dos funciones, en la primera **fromSnakeToCamelCase** se pasa una cadena recibida por parámetro en estilo **Snake Case** (las palabras se separan por barrabaja) y devuelve una cadena en estilo **Camel Case** (palabras separadas con la primera de la siguiente en mayúscula). Para ello se recorre la cadena hasta que se le encuentra una barrabaja, una vez hecho se copia la siguiente letra en mayúscula. Mientras no se encuentre una barrabaja, se seguirá copiando letra a letra en la variable creada. En la segunda función **fromCamelToSnakeCase**, se hace lo contrario, se busca una letra mayúscula y si se encuentra se añade una barrabaja y luego la letra que estaba en mayúscula se la copiamos a la variable que creamos pero esta vez en minúscula. Al igual que en el caso anterior, si la condición no se da, se copia letra a letra sin realizar modificaciones.
 
 **Salida del programa**
 ```
@@ -187,7 +187,7 @@ Una cadena dada en Snake Case (the_stealth_warrior) en formato Camel Case es: th
 const onePunch = (str: string) => str == ``? (`Broken!`):
 (str.split(" ").sort().join(" ").replace(/[ae]/gi, ""));
 ```
-Para realizar este ejercicio he creado una función anónima, la cual tiene dos opciones. Si la cadena está vacía se retorna *Broken!*. En caso de que no sea así se separa la cadena, se ordena alfabéticamente, las une de nuevo y por úlitmo, elimina todos los carácteres *a* y *e* de las palabras. Finalmente, se retorna el resultado de las anteriores operaciones.
+Para realizar este ejercicio he creado una **función anónima**, la cual tiene dos opciones. Si la cadena está vacía se retorna *Broken!*. En caso de que no sea así se separa la cadena, se ordena alfabéticamente, las une de nuevo y por último, elimina todos los carácteres *a* y *e* de las palabras. Finalmente, se retorna el resultado de las anteriores operaciones.
 
 **Salida del programa**
 ```
@@ -225,7 +225,7 @@ function isValidISBN(ISBN: string): boolean {
   }
 }
 ```
-Para este ejercicio se ha creado una función que recibe como parámetro una cadena que representa un ISBM, y devolverá true o false en función si es un ISBM válido o no. Primero usando una expresión regular, quitamos los guiones que pueda tener la cadena. El paso siguiente es comprobar el tamaño de la cadena dada. El siguiente paso es entrar a un bucle donde se irá realizando un sumatorio con la fórmula siguiente: *(x1 * 10 + x2 * 9 + x3 * 8 + x4 * 7 + x5 * 6 + x6 * 5 + x7 * 4 + x8 * 3 + x9 * 2 + x10 * 1) mod 11 == 0* esta función nos da la pista sobre la validez del ISBM. En el **for** se comprueba si hay alguna X, ya que esta tiene un valor correspondiente a 10 y se multiplica por el valor correspondiente. Si no, se pasa el número encontrado en la cadena a un entero y se multiplica por el valor correspondiente. Por úlitmo, se comprueba si el resultado obtenido es divisible por 11 y si lo es, se devolverá un *booleano* con valor true, afirmando la validez del ISBM. En el caso contrario, se devolverá un false.
+Para este ejercicio se ha creado una función que recibe como parámetro una cadena que representa un **ISBM**, y devolverá *true* o *false* en función si es un **ISBM** válido o no. Primero usando una expresión regular, quitamos los guiones que pueda tener la cadena. El paso siguiente es comprobar el tamaño de la cadena dada. El siguiente paso es entrar a un bucle donde se irá realizando un sumatorio con la fórmula siguiente: ```(x1 * 10 + x2 * 9 + x3 * 8 + x4 * 7 + x5 * 6 + x6 * 5 + x7 * 4 + x8 * 3 + x9 * 2 + x10 * 1) mod 11 == 0``` esta función nos da la pista sobre la validez del **ISBM**. En el **for** se comprueba si hay alguna X, ya que esta tiene un valor correspondiente a 10 y se multiplica por el valor correspondiente. Si no, se pasa el número encontrado en la cadena a un entero y se multiplica por el valor correspondiente. Por úlitmo, se comprueba si el resultado obtenido es divisible por 11 y si lo es, se devolverá un *booleano* con valor *true*, afirmando la validez del **ISBM**. En el caso contrario, se devolverá un *false*.
 
 **Salida del programa**
 
@@ -264,7 +264,7 @@ function nextNumber(num: number): number {
 }
 ```
 
-Para este ejercicio, se ha creado una funcion que recibe por parámetro un número, para obtener el siguiente número mayor si se reorganizan sus dígitos. Mediante dos bucles que recorrerán el número, uno de izquierda a derecha y el otro de manera inversa, hacemos desplazar el último número a la izquierda hasta que encuentre uno menor que intercambiará y retornará el número, siendo el siguiente posible. De no poder realizar esta operación, se hará con el penúltimo y así con todos los dígitos. Si finalmente agota todos los dígitos, se retorna un -1.
+Para este ejercicio, se ha creado una función que recibe por parámetro un número, para obtener el siguiente número mayor si se reorganizan sus dígitos. Mediante dos bucles que recorrerán el número, uno de izquierda a derecha y el otro de manera inversa, hacemos desplazar el último número a la izquierda hasta que encuentre uno menor que intercambiará y retornará el número, siendo el siguiente posible. De no poder realizar esta operación, se hará con el penúltimo y así con todos los dígitos. Si finalmente agota todos los dígitos, se retorna un -1.
 
 **Salida del programa**
 ```
@@ -293,7 +293,7 @@ function ipsInRange(ip1: string, ip2: string): number {
 }
 
 ```
-Para realizar este ejercicio, usaremos una función, esta recibe dos parámetro, que se corresponden con las dos IPs. Primeros separamos cada una de las IP en un array. Creamos un bucle donde recorremos el vector al revés. Se obtiene el valor y se resta la IP2 - IP1, ese resultado se multiplica por la variable auxiliar. Finalmente se retorna la suma total, que nos dará el rango.
+Para realizar este ejercicio, usaremos una función, esta recibe dos parámetro, que se corresponden con las dos **IPs**. Primeros separamos cada una de las **IP** en un array. Creamos un bucle donde recorremos el vector al revés. Se obtiene el valor y se resta la *IP2 - IP1*, ese resultado se multiplica por la variable auxiliar. Finalmente se retorna la suma total, que nos dará el *rango*.
 
 **Salida del programa**
 ```
@@ -371,7 +371,7 @@ function combatePokemon(tipoPokemon1: string, tipoPokemon2: string, ataque: numb
 }
 ```
 
-Para poder realizar este ejercicio, creamos una función que recibe como parametros el tipo del Pokemon 1, el tipo del Pokemon 2, la capacidad de ataque del primer Pokemon y la capacidad de defensa del segundo Pokemon. La función nos retornará el daño, para ello será necesario hallar la efectividad del ataque, para poder comparar los tipos y así obtener la efictivdad se ha hecho un *switch*, que tendrá el valor del Pokemon 1, el que realiza el ataque, y va comparando en función del tipo del Pokemon que recibe el ataque. Una vez haya entrado en la condición, se podrá obtener la efictividad. Por úlitmo, con la operación que se nos da en el guión de la práctica se calculará el daño y se retornará.
+Para poder realizar este ejercicio, creamos una función que recibe como parametros el tipo del Pokemon 1, el tipo del Pokemon 2, la capacidad de ataque del primer Pokemon y la capacidad de defensa del segundo Pokemon. La función nos retornará el daño, para ello será necesario hallar la efectividad del ataque, para poder comparar los tipos y así obtener la efictivdad se ha hecho un *switch*, que tendrá el valor del Pokemon 1, el que realiza el ataque, y va comparando en función del tipo del Pokemon que recibe el ataque. Una vez haya entrado en la condición, se podrá obtener la *efictividad*. Por úlitmo, con la operación que se nos da en el enunciado de la práctica se calculará el daño y se retornará.
 
 **Salida del programa**
 ```
@@ -401,7 +401,7 @@ function isValidUsername(user: string): boolean {
   return false;
 }
 ```
-Para poder completar este ejercicio, se ha desarrollado una función, que recibe como parámetro una cadena y devolverá un *booleano*. Para empezar se calcula el tamaño de la cadena y entramos a unos condicionales. Durante el primero comprobamos que la cadena tiene más de 4 caráctres y menos de 30. La siguiente comprueba que la cadena no empieza ni termina en barrabaja. La siguiente comprueba que los carácteres utilizados son letras en mayúsculas y minúsculas, números y los signos siguentes *[$ _ -]*, con esta comprobación hacemos que la cadena tenga al menos uno de cada tipo. Por último, con el último condicional nos aseguramos de que no se repite más de 2 veces cualquier tipo de carácter. Si se han cumplido todas las condiciones la función devolverá un true y si no, devolverá un false ya que no será un nombre de usuario válido.
+Para poder completar este ejercicio, se ha desarrollado una función, que recibe como parámetro una cadena y devolverá un *booleano*. Para empezar se calcula el tamaño de la cadena y entramos a unos condicionales. Durante el primero comprobamos que la cadena tiene más de 4 caráctres y menos de 30. La siguiente comprueba que la cadena no empieza ni termina en *barrabaja*. La siguiente comprueba que los carácteres utilizados son letras en mayúsculas y minúsculas, números y los signos siguentes *[$ _ -]*, con esta comprobación hacemos que la cadena tenga al menos uno de cada tipo. Por último, con el último condicional nos aseguramos de que no se repite más de 2 veces cualquier tipo de carácter. Si se han cumplido todas las condiciones la función devolverá un *true* y si no, devolverá un *false* ya que no será un nombre de usuario válido.
 
 **Salida del programa**
 ```
