@@ -30,6 +30,28 @@ Wrote to /home/usuario/Practicas/p3/package.json:
 Una vez realizado, ya estamos en la carpeta donde realizaremos los ejercicios.
 ## Ejercicio 1: Años bisiestos
 [Código resuelto](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-alu0101119663/blob/master/src/ejercicio-1.ts)
+
+```
+function isLeapYear(year: number) {
+  if (year % 4 == 0) {
+    if (year % 100 != 0) {
+      return true;
+    } else if ((year % 100 == 0) && (year % 400 == 0)) {
+      return true;
+    }
+  }
+  return false;
+}
+```
+La función recibe como parametro el año que vamos a analizar, una vez recibido vemos si cumple las condiciones de si es divisible entre 4, si es divisible por 100 y si es divisible por 400. Entonces si en la primera no se da el caso nos devuelve false, sin embargo si cumbple la condicion comprueba la siguiete, que es un condicional compuesto, para que retorne un true, debe darse los dos casos tanto que sea divisible por 100 como por 400.
+
+**Salida del programa**
+```
+El año 1997 es bisiesto? = false
+El año 1996 es bisiesto? = true
+El año 1900 es bisiesto? = false
+El año 2000 es bisiesto? = true
+```
 ## Ejercicio 2 - Notación decimal y factorial
 [Código resuelto](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-alu0101119663/blob/master/src/ejercicio-2.ts)
 ## Ejercicio 3 - Validador de mensajes
